@@ -9,7 +9,6 @@ import { MakeCatService } from '../make-cat.service';
 })
 export class AppCreateKittenComponent implements OnInit {
 
-
   constructor(
     public makeCatService: MakeCatService,
   ) {}

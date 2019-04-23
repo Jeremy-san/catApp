@@ -8,11 +8,13 @@
   ></span>
   <br>
   <span
-   [innerHTML]="userCat.bd"
+   [innerHTML]="userCat.bd" 
   ></span>
   <br>
   <img
     src= {{userCat.url}}
   />
+
+  <button (click)= "makeCatService.addToAdopted($event, i)">Adopt me !</button>
 
 </div>

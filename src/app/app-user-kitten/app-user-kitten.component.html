@@ -1,3 +1,18 @@
-<p>
-  app-user-kitten works!
-</p>
+<div *ngFor="let adoptedCat of makeCatService.adoptedCats; let i = index">
+  <span
+    [innerHTML]="adoptedCat.name"
+  ></span>
+<br>
+  <span
+    [innerHTML]="adoptedCat.race"
+  ></span>
+  <br>
+  <span
+   [innerHTML]="adoptedCat.bd" 
+  ></span>
+  <br>
+  <img
+    src= {{adoptedCat.url}}
+  />
+
+  </div>

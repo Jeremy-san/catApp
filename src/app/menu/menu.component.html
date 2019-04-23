@@ -4,12 +4,21 @@
   </div>
   <div class="navbar-menu">
     <!-- navbar start, navbar end -->
-    <a class="navbar-item">
+    <a class="navbar-item" [routerLink]="['/createKitten']">
       Home
     </a>
 
-    <a class="navbar-item">
-      ajouter un chat
+    <a class="navbar-item" [routerLink]="['/createKitten']">
+      Add a cat
     </a>
+
+    <a class="navbar-item" [routerLink]="['/listKitten']">
+      Our cats
+    </a>
+
+    <a class="navbar-item" [routerLink]="['/userKitten']">
+      Already adopted Kitten
+    </a>
+
   </div>
 </nav>

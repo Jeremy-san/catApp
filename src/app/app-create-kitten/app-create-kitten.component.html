@@ -1,32 +1,39 @@
 <div class="inpute">
   <h1>Formulaire d'ajout de chat</h1>
 
-  <h2 class="formTitle">nom du chat</h2>
+  <h2 class="formTitle">Nom du chat *</h2>
   <input
     type="text"
+    required
     [(ngModel)]="makeCatService.nameCat"
   >
 
-  <h2 class="formTitle">Race du chat</h2>
+  <h2 class="formTitle">Race du chat *</h2>
   <input
     type="text"
+    required
     [(ngModel)]="makeCatService.raceCat"
   >
 
-  <h2 class="formTitle">Date de naissance du chat</h2>
+  <h2 class="formTitle">Date de naissance du chat *</h2>
   <input
     type="text"
+    required
     [(ngModel)]="makeCatService.bdCat"
   >
 
-  <h2 class="formTitle">Lien de la photo du chat</h2>
+  <h2 class="formTitle">Photo du chat *</h2>
   <input
     type="text"
+    required
     [(ngModel)]="makeCatService.urlCat"
   >
 
+  <p>* = Required</p>
+
   <a
-  href
+  href  
+  
   class="remove button is-danger is-small is-outlined"
   (click)="makeCatService.addToMarket($event)"
   >Ajouter</a>

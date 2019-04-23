@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MakeCatService } from '../make-cat.service';
 
 @Component({
   selector: 'app-app-user-kitten',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppUserKittenComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public makeCatService: MakeCatService,
+  ) {}
 
   ngOnInit() {
   }
